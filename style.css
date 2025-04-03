@@ -5,6 +5,29 @@
     font-style: normal;
 }
 
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the body fill the entire viewport */
 body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'MyCustomFont', sans-serif;
+    background-color: #f0f0f0; /* Optional: for better visibility */
+}
+
+/* Container for the text */
+.container {
+    text-align: center;
+}
+
+p {
+    font-size: 48px; /* Adjust text size as needed */
+    margin: 10px 0;  /* Add some spacing between lines */
 }
