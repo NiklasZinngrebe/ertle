@@ -5,6 +5,29 @@
     font-style: normal;
 }
 
+ #myForm {
+    display: none; /* Hide the form by default */
+    margin-top: 20px;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling to open the form */
+#openFormButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#openFormButton:hover {
+    background-color: #0056b3;
+}
+
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -41,7 +64,7 @@ form {
 }
 
 label {
-    font-size: 1rem;
+    font-size: 30px;
 }
 
 input, textarea, button {
