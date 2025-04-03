@@ -12,7 +12,7 @@
         <p>ERTLE'S</p>
         <p>SCHRAUBER</p>
         <p>STUEBLE &copy;</p>
-
+<!--
         <form action="https://getform.io/f/bxownzma" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -26,6 +26,39 @@
             <input type="hidden" name="_gotcha" style="display:none !important">
             <button type="submit">Send</button>
         </form>
+
+-->
+         <!-- Button to show the form -->
+        <button id="openFormButton">Open Form</button>
+    
+        <!-- Hidden form that will appear when the button is clicked -->
+        <div id="myForm">
+            <form action="https://getform.io/f/abcd1234" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+            // JavaScript to toggle the visibility of the form when the button is clicked
+            document.getElementById("openFormButton").addEventListener("click", function() {
+                var form = document.getElementById("myForm");
+                // Toggle the form visibility
+                if (form.style.display === "none" || form.style.display === "") {
+                    form.style.display = "block";
+                } else {
+                    form.style.display = "none";
+                }
+            });
+        </script>
     </div>
 
 
