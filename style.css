@@ -31,3 +31,34 @@ p {
     font-size: 80px; /* Adjust text size as needed */
     margin: 10px 0;  /* Add some spacing between lines */
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between form elements */
+    max-width: 400px; /* Optional: Adjusts the max width of the form */
+    margin: auto; /* Centers the form on the page */
+}
+
+label {
+    font-size: 1rem;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%; /* Makes inputs take the full width of the form */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
