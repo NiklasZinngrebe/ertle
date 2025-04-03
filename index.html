@@ -48,14 +48,16 @@
         </div>
     
         <script>
-            // JavaScript to toggle the visibility of the form when the button is clicked
+            // JavaScript to toggle the visibility of the form and hide the button when clicked
             document.getElementById("openFormButton").addEventListener("click", function() {
                 var form = document.getElementById("myForm");
+                var button = document.getElementById("openFormButton");
+    
                 // Toggle the form visibility
                 if (form.style.display === "none" || form.style.display === "") {
                     form.style.display = "block";
-                } else {
-                    form.style.display = "none";
+                    // Hide the button
+                    button.style.display = "none";
                 }
             });
         </script>
